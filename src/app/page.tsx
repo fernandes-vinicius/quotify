@@ -9,8 +9,9 @@ import { IQuote } from '~/types'
 
 import { Button } from './components/Button'
 import { Quote } from './components/Quote'
-import Link from 'next/link'
 import { ArrowClockwise } from 'phosphor-react'
+
+import { Footer } from './components/Footer'
 
 const fetcher = () => {
   return axios
@@ -59,26 +60,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="flex justify-center py-10">
-        <div className="flex items-center gap-2 text-xs">
-          <span>Make by</span>
-          <Link
-            href="https://github.com/LUC4SNUN3S"
-            target="_blank"
-            rel="noopener"
-          >
-            <b>@lucas-evocorp</b>
-          </Link>
-          <span className="text-gray-300 text-base">|</span>
-          <Link
-            href="https://github.com/fernandes-vinicius"
-            target="_blank"
-            rel="noopener"
-          >
-            <b>@fernandes-vinicius</b>
-          </Link>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }

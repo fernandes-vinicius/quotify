@@ -25,12 +25,12 @@ export function Quote({ quote }: QuoteProps) {
           wrapper="p"
           cursor={true}
           // repeat={Infinity}
-          className="inline-block text-3xl lg:text-4xl"
+          className="inline-block text-2xl md:text-3xl lg:text-4xl"
         />
       )}
 
       {isCompleted && (
-        <span className="mt-4 text-sm text-right font-semibold">
+        <span className="mt-6 text-sm text-right font-semibold">
           {`― ${quote.phraseMaster}`}
         </span>
       )}
