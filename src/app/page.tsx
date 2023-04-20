@@ -63,7 +63,7 @@ export default function Home() {
         <div className="flex items-center gap-2 text-xs">
           <span>Make by</span>
           <Link
-            href="https://github.com/fernandes-vinicius"
+            href="https://github.com/LUC4SNUN3S"
             target="_blank"
             rel="noopener"
           >
