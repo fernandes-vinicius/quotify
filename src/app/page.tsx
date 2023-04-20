@@ -10,6 +10,7 @@ import { IQuote } from '~/types'
 import { Button } from './components/Button'
 import { Quote } from './components/Quote'
 import Link from 'next/link'
+import { ArrowClockwise } from 'phosphor-react'
 
 const fetcher = () => {
   return axios
@@ -49,13 +50,11 @@ export default function Home() {
               escolhidas aleatoriamente.
             </p>
 
-            <Button
-              className="lg:ml-auto mt-8"
-              onClick={handleMutate}
-              disabled={isLoading}
-            >
-              Me inspire agora!
-            </Button>
+            <div className="mt-8">
+              <Button onClick={handleMutate} disabled={isLoading}>
+                <ArrowClockwise weight="fill" size={20} /> Me inspire agora!
+              </Button>
+            </div>
           </div>
         </div>
       </div>
