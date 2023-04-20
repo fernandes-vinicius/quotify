@@ -24,7 +24,6 @@ export function Quote({ quote }: QuoteProps) {
           ]}
           wrapper="p"
           cursor={true}
-          // repeat={Infinity}
           className="inline-block text-2xl md:text-3xl lg:text-4xl"
         />
       )}
