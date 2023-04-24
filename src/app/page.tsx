@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="flex justify-center py-6 text-xs text-slate-500">
+      <footer className="flex justify-center py-4 text-xs text-slate-500">
         <div className="grid grid-cols-3 items-center place-items-center">
           <Link
             href="https://github.com/fernandes-vinicius"

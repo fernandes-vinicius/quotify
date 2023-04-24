@@ -3,6 +3,8 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
+import clsx from 'clsx'
+
 import { IPhrase } from '~/services/types'
 
 interface PhraseProps {
@@ -24,7 +26,10 @@ export function Phrase({ phrase }: PhraseProps) {
           ]}
           wrapper="p"
           cursor={true}
-          className="inline-block text-2xl md:text-3xl lg:text-4xl"
+          className={clsx(
+            'inline-block text-2xl md:text-3xl lg:text-4xl',
+            `after:text-amber-600 after:text-5xl after:ml-2`,
+          )}
         />
       )}
 
@@ -36,3 +41,4 @@ export function Phrase({ phrase }: PhraseProps) {
     </>
   )
 }
+// {`inline-block text-2xl md:text-3xl lg:text-4xl before:content-['"'] before:mr-2 before`}
