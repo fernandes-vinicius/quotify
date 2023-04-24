@@ -3,23 +3,23 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
-import { IQuote } from '~/types'
+import { IPhrase } from '~/services/types'
 
-interface QuoteProps {
-  quote: IQuote
+interface PhraseProps {
+  phrase: IPhrase
 }
 
-export function Quote({ quote }: QuoteProps) {
+export function Phrase({ phrase }: PhraseProps) {
   const [isCompleted, setIsCompleted] = React.useState(false)
 
   return (
     <>
-      {quote.content && (
+      {phrase.content && (
         <TypeAnimation
-          key={quote.id}
+          key={phrase.id}
           sequence={[
             () => setIsCompleted(false),
-            `"${quote.content}"`,
+            `"${phrase.content}"`,
             () => setIsCompleted(true),
           ]}
           wrapper="p"
@@ -30,7 +30,7 @@ export function Quote({ quote }: QuoteProps) {
 
       {isCompleted && (
         <span className="mt-6 text-sm text-right font-semibold">
-          {`― ${quote.phraseMaster}`}
+          {`― ${phrase.phraseMaster}`}
         </span>
       )}
     </>

@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 
 import clsx from 'clsx'
@@ -15,7 +13,7 @@ export function Button({ className, ...rest }: ButtonProps) {
       className={clsx(
         'inline-flex items-center justify-center gap-4',
         'bg-slate-900 text-slate-50',
-        'h-12 px-6 rounded-full capitalize text-sm font-semibold',
+        'h-14 px-6 rounded-full capitalize text-sm font-semibold',
         'disabled:opacity-40 disabled:cursor-not-allowed',
         className,
       )}

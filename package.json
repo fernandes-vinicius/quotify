@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^1.2.1",
     "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "18.15.12",
     "@types/react": "18.0.37",
